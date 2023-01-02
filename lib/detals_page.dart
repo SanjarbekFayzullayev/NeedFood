@@ -31,16 +31,19 @@ class _DetalsPageState extends State<DetalsPage> {
                           color: Colors.blue,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Icon(Icons.image),
-                              Text(
+                            children:  [
+                             Container(
+                                 margin: EdgeInsets.only(bottom: 36),
+                                 child: Image.asset("images/burger.png",fit: BoxFit.fill,)),
+                              
+                              const Text(
                                 "Need",
                                 style: TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white),
                               ),
-                              Text(
+                              const Text(
                                 "Food",
                                 style: TextStyle(
                                     fontSize: 30,
