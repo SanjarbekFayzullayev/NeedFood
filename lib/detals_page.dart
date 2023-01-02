@@ -74,6 +74,7 @@ class _DetalsPageState extends State<DetalsPage> {
                                 return "Error type";
                               }
 
+
                             },
                             onSaved: (value) => setState(() {
                                   password = value.toString();
