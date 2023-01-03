@@ -22,14 +22,12 @@ class _PagesTuState extends State<PagesTu> {
                   height: 70,
                   width: double.infinity,
                   child: Material(
-
-
                     elevation: 12,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Row(
-                          children:  [
+                          children: [
                             Image.asset("images/icon.png"),
                             const Text(
                               "Need",
@@ -51,7 +49,8 @@ class _PagesTuState extends State<PagesTu> {
                             height: 40,
                             child: const Material(
                               elevation: 12,
-                              borderRadius: BorderRadius.all(Radius.circular(33)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(33)),
                               child: Icon(Icons.search),
                             ),
                           ),
@@ -92,7 +91,8 @@ class _PagesTuState extends State<PagesTu> {
                               height: 20,
                               child: const Material(
                                 color: Colors.red,
-                                borderRadius: BorderRadius.all(Radius.circular(30)),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(30)),
                                 child: Center(
                                     child: Text(
                                   "Older now",
@@ -210,122 +210,138 @@ class _PagesTuState extends State<PagesTu> {
                 SizedBox(
                   height: 210,
                   // Constrain height.
-                  child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.only(right: 8,left: 8,top: 10,bottom: 20),
-                          child: InkWell(
-                            onTap: () {},
-                            child: SizedBox(
-                              width: 150,
-                              height: 90,
-                              child: Material(
-                                borderRadius: const BorderRadius.all(
-                                  Radius.circular(18),
+                  child: ListView(scrollDirection: Axis.horizontal, children: [
+                    Container(
+                      margin: const EdgeInsets.only(
+                          right: 8, left: 8, top: 10, bottom: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 150,
+                          height: 90,
+                          child: Material(
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(18),
+                            ),
+                            elevation: 10,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "images/burger.png",
+                                  fit: BoxFit.cover,
                                 ),
-                                elevation: 10,
-                                child: Column(
-                                  children: [
-                                    Image.asset(
-                                      "images/burger.png",
-                                      fit: BoxFit.cover,
-                                    ),
-                                    const Text(
-                                      "Beef Burger",
-                                      style: TextStyle(fontWeight: FontWeight.w500),
-                                    ),
-                                    const Text(
-                                      "Mcdi",
-                                      style: TextStyle(fontWeight: FontWeight.w400),
-                                    ),
-                                    const SizedBox( height: 12,),
-                                    const Text(
-                                      "Rp. 20.000",
-                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),
-                                    ),
-                                  ],
+                                const Text(
+                                  "Beef Burger",
+                                  style: TextStyle(fontWeight: FontWeight.w500),
                                 ),
-                              ),
+                                const Text(
+                                  "Mcdi",
+                                  style: TextStyle(fontWeight: FontWeight.w400),
+                                ),
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                const Text(
+                                  "Rp. 20.000",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        Container(
-                          margin: const EdgeInsets.only(right: 8,left: 8,top: 10,bottom: 20),
-                          child: InkWell(
-                            onTap: () {},
-                            child: SizedBox(
-                              width: 150,
-                              height: 90,
-                              child: Material(
-                                borderRadius: const BorderRadius.all(
-                                  Radius.circular(18),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(
+                          right: 8, left: 8, top: 10, bottom: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 150,
+                          height: 90,
+                          child: Material(
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(18),
+                            ),
+                            elevation: 10,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "images/pizzafutti.png",
+                                  fit: BoxFit.cover,
                                 ),
-                                elevation: 10,
-                                child: Column(
-                                  children: [
-                                    Image.asset(
-                                      "images/pizzafutti.png",
-                                      fit: BoxFit.cover,
-                                    ),
-                                    const SizedBox(height: 6,),
-                                    const Text(
-                                      "Pizza Fruit",
-                                      style: TextStyle(fontWeight: FontWeight.w500),
-                                    ),
-                                    const Text(
-                                      "Pijja hut",
-                                      style: TextStyle(fontWeight: FontWeight.w400),
-                                    ),
-                                    const SizedBox( height: 12,),
-                                    const Text(
-                                      "Rp. 4  0.000",
-                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),
-                                    ),
-                                  ],
+                                const SizedBox(
+                                  height: 6,
                                 ),
-                              ),
+                                const Text(
+                                  "Pizza Fruit",
+                                  style: TextStyle(fontWeight: FontWeight.w500),
+                                ),
+                                const Text(
+                                  "Pijja hut",
+                                  style: TextStyle(fontWeight: FontWeight.w400),
+                                ),
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                const Text(
+                                  "Rp. 4  0.000",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                        Container(
-                          margin: const EdgeInsets.only(right: 8,left: 8,top: 10,bottom: 20),
-                          child: InkWell(
-                            onTap: () {},
-                            child: SizedBox(
-                              width: 150,
-                              height: 90,
-                              child: Material(
-                                borderRadius: const BorderRadius.all(
-                                  Radius.circular(18),
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(
+                          right: 8, left: 8, top: 10, bottom: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 150,
+                          height: 90,
+                          child: Material(
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(18),
+                            ),
+                            elevation: 10,
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "images/sandvich.png",
+                                  width: 120,
+                                  fit: BoxFit.cover,
                                 ),
-                                elevation: 10,
-                                child: Column(
-                                  children: [
-                                    Image.asset(
-                                      "images/sandvich.png",width: 120,
-                                      fit: BoxFit.cover,
-                                    ),
-                                    const Text(
-                                      "Chicken Sandwich",
-                                      style: TextStyle(fontWeight: FontWeight.w500),
-                                    ),
-                                    const Text(
-                                      "Mfiiy Ro",
-                                      style: TextStyle(fontWeight: FontWeight.w400),
-                                    ),
-                                    const SizedBox( height: 12,),
-                                    const Text(
-                                      "Rp. 10.000",
-                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),
-                                    ),
-                                  ],
+                                const Text(
+                                  "Chicken Sandwich",
+                                  style: TextStyle(fontWeight: FontWeight.w500),
                                 ),
-                              ),
+                                const Text(
+                                  "Mfiiy Ro",
+                                  style: TextStyle(fontWeight: FontWeight.w400),
+                                ),
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                const Text(
+                                  "Rp. 10.000",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18),
+                                ),
+                              ],
                             ),
                           ),
                         ),
-                      ]),
+                      ),
+                    ),
+                  ]),
                 ),
                 Container(
                   margin: const EdgeInsets.only(left: 24),
@@ -338,41 +354,41 @@ class _PagesTuState extends State<PagesTu> {
                 SizedBox(
                   height: 245,
                   // Constrain height.
-                  child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        InkWell(
-                          onTap: () {},
-                          child:
-                          Container(
-                            decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.all(Radius.circular(12)),
-                                image: DecorationImage(image: AssetImage("images/blog.png",),fit: BoxFit.cover)),
-                            margin: const EdgeInsets.only(right: 8,left: 26,top: 10,bottom: 20),
-
-                            width: 220,
-                            height: 90,
-
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {},
-                          child:
-                          Container(
-
-                            decoration: const BoxDecoration(
-                                borderRadius: BorderRadius.all(Radius.circular(12)),
-                                image: DecorationImage(image: AssetImage("images/hamburger.png",),fit: BoxFit.cover)),
-                            margin: const EdgeInsets.only(right: 8,left: 26,top: 10,bottom: 20),
-
-                            width: 220,
-                            height: 90,
-
-                          ),
-                        ),
-                                              ]),
+                  child: ListView(scrollDirection: Axis.horizontal, children: [
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  "images/blog.png",
+                                ),
+                                fit: BoxFit.cover)),
+                        margin: const EdgeInsets.only(
+                            right: 8, left: 26, top: 10, bottom: 20),
+                        width: 220,
+                        height: 90,
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(12)),
+                            image: DecorationImage(
+                                image: AssetImage(
+                                  "images/hamburger.png",
+                                ),
+                                fit: BoxFit.cover)),
+                        margin: const EdgeInsets.only(
+                            right: 8, left: 26, top: 10, bottom: 20),
+                        width: 220,
+                        height: 90,
+                      ),
+                    ),
+                  ]),
                 ),
-
               ],
             ),
           ],
