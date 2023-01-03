@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:need_food/detals_page.dart';
+import 'package:need_food/page2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class _MyAppState extends State<MyApp> {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Need Food",
-      home: DetalsPage(),
+      home: PagesTu(),
     );
   }
 }

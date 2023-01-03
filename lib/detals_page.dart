@@ -128,7 +128,7 @@ class _DetalsPageState extends State<DetalsPage> {
                     ],
                   ),
                   const SizedBox(
-                    height: 160,
+                    height: 140,
                   ),
                   Column(
                     children: [
