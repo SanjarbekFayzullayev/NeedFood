@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+
 
 class PagesTu extends StatefulWidget {
-  const PagesTu({Key? key}) : super(key: key);
+   PagesTu({Key? key}) : super(key: key);
 
   @override
   State<PagesTu> createState() => _PagesTuState();
@@ -12,6 +14,7 @@ class _PagesTuState extends State<PagesTu> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+
         body: ListView(
           children: [
             Column(
@@ -28,17 +31,22 @@ class _PagesTuState extends State<PagesTu> {
                       children: [
                         Row(
                           children: [
-                            Image.asset("images/icon.png"),
-                            const Text(
-                              "Need",
-                              style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.w500),
-                            ),
-                            const Text(
-                              "Food",
-                              style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.w400),
-                            ),
+                            Image.asset("images/icon.png",width: 40,),
+                            Container(
+                              margin: const EdgeInsets.only(top: 24),
+                              child: Row(children: const [
+                               Text(
+                                "Need",
+                                style: TextStyle(
+                                    fontSize: 22, fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                "Food",
+                                style: TextStyle(
+                                    fontSize: 22, fontWeight: FontWeight.w400),
+                              ), 
+                            ]),)
+                           
                           ],
                         ),
                         InkWell(
@@ -392,6 +400,26 @@ class _PagesTuState extends State<PagesTu> {
               ],
             ),
           ],
+        ),
+        bottomNavigationBar: CurvedNavigationBar(
+         backgroundColor: Colors.white,
+          buttonBackgroundColor: Colors.orange,
+          height: 50,
+          items: const <Widget> [
+         Icon(Icons.home_outlined,size: 46,color: Colors.grey,),
+         Icon(Icons.diamond_outlined,size: 46,color: Colors.grey),
+         Icon(Icons.shopping_cart,size: 46,color: Colors.grey),
+         Icon(Icons.messenger_outline,size: 46,color: Colors.grey),
+         Icon(Icons.account_circle,size: 46,color: Colors.grey),
+          ],
+          animationDuration: const Duration(
+            milliseconds: 300,
+          ),
+          animationCurve: Curves.bounceInOut,
+          onTap: (value) {
+
+
+          },
         ),
       ),
     );
